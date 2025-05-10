@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Silent Library </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      /* text-align: center;
+      position: fixed !important;
+     */
+    }
+
+  
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1cb;
+      height: 100%;
+     
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+       
+      }
+      .row.content {height:auto;} 
+    }
+     .carousel-inner img {
+      width:40%; /* Set width to 100% */
+       margin: auto;
+       
+       min-height: 200px;
+   } 
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+      } 
+   
+  .blink {
+                animation: blinker 7s linear infinite;
+                /* color: rgba(233, 218, 6, 0.788); */
+                font-family: sans-serif;
+            }
+
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+             /* table, th, td {
+  border: solid 0px white;
+  border-collapse: collapse;
+}  */
+  </style>
+</head>
+
+<body>
+  <script>
+    var text = document.getElementById("demo");
+    //text.innerHT Pradhusha";
+   
+  </script>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                     
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+        
+            <ul class="nav navbar-nav">
+            <li class="blink"> 
+              <a href="Home.html">
+              <img src="images/si5.jpg" height="40px" width="70px">
+              
+            </a>
+            </li> 
+       
+          </ul>
+           
+     
+           <ul class="nav navbar-nav">
+             
+        <li ><a href="Home.html"><H5>Home </H5></a></li>
+        
+        <li><a href="Booklist.html"><H5> Books List </H5></a></li>
+        <li><a href="Eventsandpro.html"><H5> Events And Promotions </H5></a></li>
+        <li><a href="Sitemap.html"><H5> Sitemap </H5></a></li>
+        <li><a href="Contact.html"><H5> Contact </H5></a></li>
+        <li><a href="Privacy.html"><H5> Privacy Policy </H5></a></li>
+        
+      </ul>
+      <ul></ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+      </ul>
+      
+      <form class="navbar-form navbar-right" role="search" id="myInput" action="/Booklist.html">
+       
+        <div class="form-group input-group">
+         <ul><li >
+          <input type="search" class="form-control" placeholder="Search.." id="sls" name="sls">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick = "document.getElementById('demo').innerHTML = '<---------------Oops! Sorry @ This book is not available right now !Click me to close----------->' ">
+              
+              <span class="glyphicon glyphicon-search"></span>
+              
+            </button>
+            
+          </span>        
+        </div>
+      </form>
+      
+      
+      
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul> -->
+    </div>
+    
+  </div>
+  <a href="Home.html"><p style="color: turquoise; background-color: tomato; font-size:medium"  align="center" id="demo" >
+
+  </p></a>
+  
+</nav> 
+<div><br><br><br><br>
+
+  <marquee  behavior="alternate" scrollamount="1" >
+              <img src="images/site.PNG" height="300" width="1200">
+              <!-- <img src="images/bk4.PNG" height="300" width="200">
+              <img src="images/bk6.png" height="300" width="200">
+              <img src="images/bk7.png" height="300" width="200">
+              <img src="images/bk9.png" height="300" width="200">
+              <img src="images/bk10.png" height="300" width="200">
+              <img src="images/bk11.PNG" height="300" width="200">
+              <img src="images/bk12.PNG" height="300" width="200">
+              <img src="images/bk13.png" height="300" width="200">
+              <img src="images/bk14.png" height="300" width="200">
+              <img src="images/bk15.png" height="300" width="200">
+              <img src="images/bk16.png" height="300" width="200">
+              <img src="images/bk17.PNG" height="300" width="200">
+              <img src="images/bk18.PNG" height="300" width="200">
+              <img src="images/bk19.png" height="300" width="200">
+              <img src="images/bk20.png" height="300" width="200">
+              <img src="images/bk21.png" height="300" width="200">
+              <img src="images/bk24.png" height="300" width="200"> -->
+
+  </marquee>
+ </div>
+<div>
+<!-- <div style="padding: 20px; border: 1px solid #ccc; background-color: #eee;text-align: center" onmouseclick="alert('demo()')"></div> -->
+
+
+</div> 
+
+
+
+
+<!-- 
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="images/render (5).png"   height="50px" width="170px"><br><br>
+      <p><a href="#"> </a></p> 
+      <p><a href="#"> </a></p>
+      <p><a href="#"></a></p>
+      <p><a href="Booklist.html"><div class="well">
+       <p>New Arrivals</p>
+      </div> </a></p>
+    
+      <p><a href="Booklist.html"><div class="well">
+        <p>Learning Resources</p>
+      </div> </a></p>
+      <p><a href="Booklist.html"><div class="well">
+        <p>Reading Initiatives</p>
+      </div> </a></p>
+      
+      <p><a href="#"> </a></p>
+      <p><a href="#"></a></p>
+    </div> -->
+    <!-- <div class="col-sm-8 text-left">  -->
+      <!-- <h1><marquee behavior="alternate" scrollamount="1" ><font color=gray size="6" >Welcome to Silent Library Landing Page</font></marquee></h1> -->
+      
+        <!--  <p> <u><b><font color="gray"><h4 id="new">New Arrivals</h4></font></b></u> -->
+        <br><br> <div> <center> <table border="0" >
+            <tr >
+                
+              <th><h2><font color = "turquoise">
+               
+                <b>S I T E M A P</b></font> </h2></th>
+              
+            
+              
+            </tr>
+         </table></center>
+         </div><br>
+            <!-- <div>
+              <center><img src="images/site.PNG" height="230" width="700"></center>
+            </div> -->
+            
+       
+      <div>
+        <center><table border="2" >
+           <tr border="1">
+           <td >
+            <h4><a href="home.html">&nbsp;&nbsp;&nbsp;&nbsp;<u><b>Home</b></u>&nbsp;&nbsp;</a></h4><BR>
+          
+          <h6>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="login.html"><b>LOGIN</b></a>&nbsp;&nbsp;<BR><BR><BR>
+              &nbsp;&nbsp; &nbsp;&nbsp;<a href="Home.html"><b>SEARCH</b></a>&nbsp;&nbsp; <BR><BR><BR>
+                &nbsp;&nbsp;   &nbsp;&nbsp;<a href="home.html"><b>NEW ARRIVALS</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                  &nbsp;&nbsp;    &nbsp;<a href="home.html"><b> LEARNING RESOURCES</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                    &nbsp;&nbsp;     &nbsp;&nbsp;<a href="feedback.html"><b>FEEDBACK</b></a>&nbsp;&nbsp;<BR><BR><BR></h6>
+                   </td>
+            <td>
+              <h4><a href="Booklist.html">&nbsp;&nbsp;<u><b>Books List</b></u>&nbsp;&nbsp;</a></h4><BR>
+              <h6>&nbsp;&nbsp;&nbsp;&nbsp; <a href="booksdetails.html"><b>KIDS</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                &nbsp;&nbsp; &nbsp;&nbsp;<a href="booksdetails.html"><b>ADULT </b></a>&nbsp;&nbsp;<BR><BR><BR>
+                  &nbsp;&nbsp;&nbsp;&nbsp; <a href="booksdetails.html"><b>ELDERLY</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                    &nbsp;&nbsp;&nbsp;&nbsp; <a href="booksdetails.html"><b>FIXTION</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                      &nbsp;&nbsp; &nbsp;<a href="booksdetails.html"><b>NON FIXTION</b></a>&nbsp;&nbsp;<BR><BR><BR></h6>
+            </td>  
+            <td>
+              <h4><a href="Eventsandpro.html">&nbsp; &nbsp;<u><b>Events And Promotions</b></u>&nbsp;&nbsp;</a></h4><BR>
+              <h6>
+                &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;<a href="Home.html"><b>SEARCH</b></a> &nbsp;&nbsp;<BR><BR><BR>
+                  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<a href="Contact.html"><b>PROGRAMMES</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                    &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; <a href="Booklist.html"><b>MAGAZINES</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                      &nbsp;&nbsp;  &nbsp;&nbsp;   &nbsp;&nbsp;<a href="Booklist.html"><b>NEWSPAPERS</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                        &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp; <a href="feedback.html"><b>FEEDBACK</b></a>&nbsp;&nbsp;<BR><BR><BR>
+              </h6>
+           <!--  </td>
+            <td>
+              <h5><a href="Sitemap.html"><u><b>Sitemap</b></u></a></h5>
+              <h6> <br>
+                
+               </h6><br>
+
+            </td> -->
+            <td>
+              <h4><a href="Contact.html">&nbsp;&nbsp;<u><b>Contact</b></u>&nbsp;&nbsp;</a></h4><BR>
+              <h6> &nbsp;&nbsp;&nbsp;&nbsp;<a href="Contact.html"><b>CONTACT</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a href="Contact.html"><b>PHONE NUMBER</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                
+                  &nbsp;&nbsp;&nbsp;&nbsp;<a href="Contact.html"><b>ADDRESS</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                    &nbsp;&nbsp; &nbsp; <a href="Contact.html"><b>EMAIL</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                      &nbsp;&nbsp;  &nbsp;&nbsp;<a href="feedback.html"><b>FEEDBACK</b></a>&nbsp;&nbsp;<BR><BR><BR>
+
+            </td>
+            <td>
+              <h4><a href="Privacy.html">&nbsp;&nbsp;<u><b>Privacy Pilicy</b></u>&nbsp;&nbsp;</a></h4><BR>
+              <h6> 
+                &nbsp;&nbsp;&nbsp;&nbsp;<a href="Privacy.html"><b>OVERVIEW</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                  &nbsp;&nbsp; &nbsp;&nbsp;<a href="booksdetails.html"><b>READING INITIATIVES</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                    &nbsp;&nbsp;  &nbsp;&nbsp;<a href="Privacy.html"><b>GOVERNMENT AGENCY</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                      &nbsp;&nbsp;  &nbsp;&nbsp; <a href="Privacy.html"><b>PERSONAL DATA</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                        &nbsp;&nbsp; &nbsp;&nbsp;   &nbsp;&nbsp;<a href="feedback.html"><b>FEEDBACK</b></a>&nbsp;&nbsp;<BR><BR><BR>
+                
+                </h6>
+            </td>
+        </tr>
+      </table></center>
+    </div>     
+      
+   <br>
+  <!-- </div>
+ 
+    <div class="col-sm-2 sidenav">
+     <div><p> <img src="images/render (2).png"   height="50px" width="180px"> </p></div><br>
+      <a href="Booklist.html"><div class="well">
+        <p>Magazines</p></a>
+      </div>
+      
+      <a href="Booklist.html"><div class="well">
+        <p>Newspapers</p></a>
+      </div>
+      <p><a href="Booklist.html"><div class="well">
+        <p>Career Opportunities</p>
+      </div> </a></p>
+    </div>
+  </div>
+</div> -->
+<br>
+<footer class="container-fluid text-center">
+  <p>
+    <a href="feedback.html"> <font color="white">Feedback </font></a>| Email:silent@library.com.sg | Website : www.SilentLibrary.com<br>
+   &copy; 2025 Silent Library. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

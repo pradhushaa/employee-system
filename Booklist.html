@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Silent Library </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      /* text-align: center;
+      position: fixed !important;
+     */
+    }
+
+  
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1cb;
+      height: 100%;
+     
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+       
+      }
+      .row.content {height:auto;} 
+    }
+     .carousel-inner img {
+      width:80%;
+      /* Set width to 100%  */
+       margin: auto;
+       
+       min-height: 200px;
+   } 
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+      } 
+   
+  .blink {
+                animation: blinker 5s linear infinite;
+                /* color: rgba(233, 218, 6, 0.788); */
+                font-family: sans-serif;
+            }
+
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+            .hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+  </style>
+</head>
+
+<body>
+  <script>
+    var text = document.getElementById("demo");
+    //text.innerHT Pradhusha";
+   
+  </script>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>          
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+        <!-- <ul class="nav navbar-nav navbar-left">
+          <li class=""><img src="C:\Users\user\Documents\PDWD\Assignment1\images\silent_lib.png" height="100px" width=200px">
+        </li> 
+           
+       &nbsp;
+        <li>
+            <marquee behavior="alternate">  
+                         
+              <font color=white size="7" >   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Welcome to Silent Library</font>
+          </marquee>
+        </li>
+        </ul> -->
+
+          <!-- <marquee behavior="alternate" scrollamount="1" ><font color=gray size="6" >Welcome to Silent Library</font></marquee> -->
+          
+            <!-- <marquee behavior="alternate" direction="up" scrollamount="1" >                  
+              <font color=white size="6.9" >Welcome to Silent Library</font>
+          </marquee> -->
+        
+          <!-- <li class="blink">  <font color="white" size="5"> Silent</font> -->
+            <ul class="nav navbar-nav">
+            <li class="blink"> 
+              <a href="Home.html">
+              <img src="images/si5.jpg" height="50px" width="80px">
+              
+            </a>
+            </li> 
+       
+          </ul>
+            <!-- <ul class="navbar-right">
+              <li class="blink">
+              <img src="images/Libr.png" height="50px" width="60px"> -->
+                      
+        <!-- <li ><font color="gray" size="3" ><center>Read in Peace, learn with focus</center></font>  -->
+            
+    <!-- <header class="bg-dark text-white text-center p-1"> -->
+               
+           <!-- <font color="white" size="3" >Read in Peace, learn with focus</font> -->
+  
+       
+     <ul></ul>
+           <ul class="nav navbar-nav">
+             
+        <li ><a href="Home.html"><H5>Home </H5></a></li>
+        
+        <li><a href="Booklist.html"><H5> Books List </H5></a></li>
+        <li><a href="Eventsandpro.html"><H5> Events And Promotions </H5></a></li>
+        <li><a href="Sitemap.html"><H5> Sitemap </H5></a></li>
+        <li><a href="Contact.html"><H5> Contact </H5></a></li>
+        <li><a href="Privacy.html"><H5> Privacy Policy </H5></a></li>
+        
+      </ul>
+      <ul></ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+      </ul>
+      
+      <form class="navbar-form navbar-right" role="search" id="myInput" action="/Booklist.html">
+       
+        <div class="form-group input-group">
+         <ul><li >
+          <input type="search" class="form-control" placeholder="Search Books.." id="sls" name="sls">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick = "document.getElementById('demo').innerHTML = '<---------------Oops! Sorry @ This book is not available right now !Click me to close----------->'">
+              
+              <span class="glyphicon glyphicon-search"></span>
+              
+            </button>
+            
+          </span>        
+        </div>
+      </form>
+      
+    </div>
+    
+  </div>
+  <a href="Home.html">
+    <p style="color: turquoise; background-color: tomato; font-size:medium"  align="center" id="demo" >
+  </p></a>
+ 
+</nav>
+
+ <div>
+  <br><br><br><br><br>
+  <marquee  behavior="alternate" scrollamount="1" ><a href="booksdetails.html">
+              <img src="images/b5.PNG" height="290" width="190">
+              <img src="images/bk4.PNG" height="290" width="190">
+              <img src="images/bk6.png" height="290" width="190">
+              <img src="images/bk7.png" height="290" width="190">
+              <img src="images/bk9.png" height="290" width="190">
+              <img src="images/bk10.png" height="290" width="190">
+              <img src="images/bk11.PNG" height="290" width="190">
+              <img src="images/bk12.PNG" height="290" width="190">
+              <img src="images/bk13.png" height="290" width="190">
+              <img src="images/bk14.png" height="290" width="190">
+              <img src="images/bk15.png" height="290" width="190">
+              <img src="images/bk16.png" height="290" width="190">
+              <img src="images/bk17.PNG" height="290" width="190">
+              <img src="images/bk18.PNG" height="290" width="190">
+              <img src="images/bk19.png" height="290" width="190">
+              <img src="images/bk20.png" height="290" width="190">
+              <img src="images/bk21.png" height="290" width="190">
+              <img src="images/bk24.png" height="290" width="190">
+
+            </a> </marquee>
+ </div>
+
+ <!-- <div> 
+ 
+   
+  <img src="images/sl1.jpg" class="img-circle" alt="Cinque Terre" height="200px" width="230px" > 
+
+   <Marquee>
+    <img src="images/lib3.jpg" class="img-rounded" alt="Cinque Terre" height="300px" width="1085px" >
+    <img src="images/lib7.jpg" class="img-rounded" alt="Cinque Terre" height="300px" width="1085px" >
+    <img src="images/lib8.jpg" class="img-rounded" alt="Cinque Terre" height="300px" width="1085px" >
+    <img src="images/lib9.jpg" class="img-rounded" alt="Cinque Terre" height="300px" width="1085px" >
+    <img src="images/lib6.jpg" class="img-rounded" alt="Cinque Terre" height="300px" width="1085px" >
+    <img src="images/lib5.jpg" class="img-rounded" alt="Cinque Terre" height="300px" width="1085px" >
+       
+  </Marquee> 
+   
+     <img src="images/sl2.jpg" class="img-circle" alt="Cinque Terre" height="200px" width="230px"> 
+
+  
+</div> -->
+
+<!-- <div class="container-fluid text-center"> 
+    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="images/render (5).png"   height="50px" width="170px"><br><br>
+      <p><a href="#"> </a></p> 
+      <p><a href="#"> </a></p>
+      <p><a href="#"></a></p>
+      <p><a href="#"><div class="well">
+       <p><a href="booksdetails.html">New Arrivals</a></p>
+      </div> </a></p>
+    
+      <p><a href="booksdetails.html"><div class="well">
+        <p>Learning Resources</p>
+      </div> </a></p>
+      <p><a href="booksdetails.html"><div class="well">
+        <p>Reading Initiatives</p>
+      </div> </a></p>
+      
+      <p><a href="#"> </a></p>
+      <p><a href="#"></a></p>
+    </div>
+    <div class="col-sm-8 text-left">  -->
+      <!-- <center><font color=maroon size="4" ><p class="blink" ><u> BOOKS LIST</u></p></font></center></h1> -->
+      <!-- <div> -->
+        <!--  <p> <u><b><font color="gray"><h4 id="new">New Arrivals</h4></font></b></u> -->
+          <div>
+           <br> <CENTER><h2><font color = "turquoise"><B>BOOKS LIST</B></font></h2></CENTER></div><br>
+          <center> <table  >
+         
+
+            
+            <tr>
+              <TH bgcolor="CYAN" height="50" width="50"><MARQUEE BEHAVIOR="ALTERNATE" SCROLLAMOUNT="0" direction="up" height="20px"><CENTER><a href="booksdetails.html">KIDS</a></CENTER></MARQUEE></TH>
+              <TH bgcolor="PINK" height="50" width="50"><MARQUEE BEHAVIOR="ALTERNATE" SCROLLAMOUNT="0" direction="up" height="20px"><CENTER><a href="booksdetails.html">TEEN</a></CENTER></TH>
+                <TH bgcolor="CYAN" height="50" width="50"><MARQUEE BEHAVIOR="ALTERNATE" SCROLLAMOUNT="0" direction="up" height="20px"><CENTER><a href="booksdetails.html">ADULT</a></CENTER></TH>
+                 
+                    <TH bgcolor="PINK" height="50" width="50"><MARQUEE BEHAVIOR="ALTERNATE" SCROLLAMOUNT="0" direction="up" height="20px"><CENTER><a href="booksdetails.html">ELDERLY </a></CENTER></TH>
+                      <TH bgcolor="CYAN" height="50" width="50"><MARQUEE BEHAVIOR="ALTERNATE" SCROLLAMOUNT="0" direction="up" height="20px"><CENTER><a href="booksdetails.html"> FIXTION</a></CENTER></TH>     
+                    
+                    <TH bgcolor="PINK" height="50" width="50"><MARQUEE BEHAVIOR="ALTERNATE" SCROLLAMOUNT="0" direction="up" height="20px"><CENTER><a href="booksdetails.html"> NON FIXTION</a></CENTER></TH>
+                    </tr><br>
+                <tr>
+                  <td>
+                    |
+                  </td>
+                  <td>
+                    |
+                  </td>
+                  <td>
+                    |
+                  </td>
+                  <td>
+                    |
+                  </td>
+                  <td>
+                    |
+                  </td>
+                  <td>
+                    |
+                  </td>
+                  <td>
+                    |
+                  </td>
+                </tr>
+                  <tr>
+              <td><a href="booksdetails.html"><img src="images/Capture1.PNG" height="200" width="150"></a></td>
+              
+              <td ><a href="booksdetails.html"><img src="images/Capture6.PNG" height="200" width="150"></a></td>
+              
+                  
+              <td ><a href="booksdetails.html"><img src="images/Capture5.PNG" height="200" width="150"></a></td>
+              
+              <td ><a href="booksdetails.html"><img src="images/Capture7.PNG" height="200" width="150"></a></td>
+              
+                <td ><a href="booksdetails.html"><img src="images/Capture2.PNG" height="200" width="150"></a></td> 
+                <td ><a href="booksdetails.html"><img src="images/Capture4.PNG" height="200" width="150"></a></td>
+                       
+            
+            </tr>
+           
+          </table></center>
+      </div>
+      
+  </div><br>
+ 
+    <!-- <div class="col-sm-2 sidenav">
+     <div><p> <img src="images/render (2).png"   height="50px" width="180px"> </p></div><br>
+      <a href="booksdetails.html"><div class="well">
+        <p>Magazines</p></a>
+      </div>
+      
+      <a href="booksdetails.html"><div class="well">
+        <p>Newspapers</p></a>
+      </div>
+      <p><a href="booksdetails.html"><div class="well">
+        <p>Career Opportunities</p>
+      </div> </a></p>
+    </div>
+  </div>
+</div> -->
+<br>
+<footer class="container-fluid text-center">
+  <p>
+    <a href="feedback.html"> <font color="white">Feedback </font></a>| Email:silent@library.com.sg | Website : www.SilentLibrary.com<br>
+   &copy; 2025 Silent Library. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
